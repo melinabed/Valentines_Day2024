@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(#f2d5e5, #ff257e);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 30px;
+  gap: 15px;
+  background-color: #f2d5e5;
+  color: #ff257e;
+  font-size: 30px;
+
+  overflow: hidden;
+  animation: slide-left 10s;
+
+  position: sticky;
+  top: 0;
+  max-height: 20vh;
+}
+
+#greeting {
+  font-weight: bold;
+}
+
+span {
+  font-family: "Arizonia", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+#name {
+  font-size: 20px;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100vh;
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  font-size: 36px;
+  font-weight: bold;
+
+  color: white;
+  height: 60vh;
+  width: 100vw;
+
+  background-image: url(heart.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+#yesBtn {
+  font-size: 20px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: #ff257e;
+  color: white;
+  border: none;
+  margin-right: 10px;
+}
+
+#yesBtn:hover {
+  border: 2px solid white;
+}
+
+#noBtn {
+  font-size: 20px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  position: relative;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #ff257e;
+  padding: 10px 10px;
+
+  position: absolute;
+  bottom: 0;
+  max-height: 5vh;
+  width: 100vw;
+}
+
+#start-over {
+  background-color: #ffffff;
+  color: #ff257e;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+#start-over:focus {
+  background-color: red;
+  color: white;
+}
+
+.new-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
